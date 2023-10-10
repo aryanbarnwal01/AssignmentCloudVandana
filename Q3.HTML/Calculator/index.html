@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <table class="calculator" style="background-color: rgb(190, 192, 199);">
+        <tr>
+            
+            <td colspan="3"><input type="text" id="screen" readonly aria-colspan=""></td>
+            <td><button onclick="clearScreen()" style="background-color: rgb(157, 233, 112);">AC</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendToScreen('1')" class="number">1</button></td>
+            <td><button onclick="appendToScreen('2')" class="number">2</button></td>
+            <td><button onclick="appendToScreen('3')" class="number">3</button></td>
+            <td><button onclick="appendToScreen('+');setOperator('+')" style="background-color: rgb(177, 177, 177);">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendToScreen('4')" class="number">4</button></td>
+            <td><button onclick="appendToScreen('5')" class="number">5</button></td>
+            <td><button onclick="appendToScreen('6')" class="number">6</button></td>
+            <td><button onclick="appendToScreen('-');setOperator('-')" style="background-color: rgb(177, 177, 177);">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendToScreen('7')" class="number">7</button></td>
+            <td><button onclick="appendToScreen('8')" class="number">8</button></td>
+            <td><button onclick="appendToScreen('9')" class="number">9</button></td>
+            <td><button onclick="appendToScreen('*');setOperator('*')" style="background-color: rgb(177, 177, 177);">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendToScreen('.')" class="number">.</button></td>
+            <td><button onclick="appendToScreen('0')" class="number">0</button></td>
+            <td><button onclick="calculate()" class="number">=</button></td>
+            <td><button onclick="appendToScreen('/');setOperator('/')" style="background-color: rgb(177, 177, 177);">/</button></td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
